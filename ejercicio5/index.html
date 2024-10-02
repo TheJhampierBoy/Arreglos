@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruver</title>
+</head>
+<body>
+    <script>
+     let tienda=[];
+     let numeroRegistro;
+     let interacion;
+     let nuevoProducto;
+     let listaBusqueda =[];
+
+     tienda=[
+     {producto:'Arroz', tipProducto:'Granos', tipoUnidad:'Gramos' ,cantidad:'1000', precio:'2450'},
+     {producto:'Papa', tipProducto:'Fruver', tipoUnidad:'Gramos' ,cantidad:'500', precio:'1000'},
+     {producto:'Mora', tipProducto:'Fruver', tipoUnidad:'Gramos' ,cantidad:'500', precio:'1500'},
+     {producto:'Trucha', tipProducto:'Carne', tipoUnidad:'Gramos' ,cantidad:'1000', precio:'9000'},
+     {producto:'Pollo completo', tipoProducto:'Carne', tipUnidad:'Gramos' ,cantidad:'1000', precio:'4500'},
+     ];
+
+     nuevoProducto = {producto:'res', tipProducto: 'Carne', tipUnidad: 'gramos', cantidad: '1000', precio: '7500'};
+
+     tienda.push(nuevoProducto)
+
+     numeroRegistros =  tienda.length;
+
+     for(interacion=0; interacion<numeroRegistros; interacion++){
+        //console.log(tienda[iteracion]);
+        if(tienda[interacion].tipProducto =='Carne'){
+            listaBusqueda.push(tienda[interacion]);
+        } else{
+          console.log(" ");
+       }
+     }
+
+console.log(listaBusqueda);
+console.log(tienda);
+
+    </script>
+</body>
+</html>
